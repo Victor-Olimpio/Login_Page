@@ -1,0 +1,290 @@
+@charset "UTF-8";
+
+/* CONFIGURAÇÕES GLOBAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CONFIGURAÇÕES DE VARIÁVEIS */
+:root {
+    --Zer: #F2F2F2;
+    --One: #E2E2E2;
+    --Two: #A7BDD9;
+    --Thr: #05AFF2;
+    --Fou: #0487D9;
+    --Fiv: #F20519;
+    --Six: #73020C;
+
+    --Black: #000000;
+    --White: #FFFFFF;
+
+    --Zer_Two: #131313;
+    --Zer_Thr: #0F0F0F;
+}
+
+/* CONFIGURAÇÕES DO BODY */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, var(--Two), var(--Fou));
+}
+
+/* CONFIGURAÇÕES DO HEADER */
+#header-page {
+    width: 40rem;
+    margin: 0 auto;
+    padding: 0.40rem;
+    margin-top: 3.0rem;
+
+    text-align: center;
+}
+
+#header-page #header-title {
+    padding: 1.0rem;
+    margin-right: 2.5rem;
+
+    font-size: 3.0rem;
+
+    color: var(--Fou);
+}
+
+/* CONFIGURAÇÕES DO MAIN - LOGIN OTHERS */
+#container-main {
+    display: block;
+    
+    width: 70rem;
+    margin: 0 auto;
+    padding: 1.0rem;
+}
+
+#login-others {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    top: 1.65rem;
+    width: 30rem;
+    height: 20rem;
+    padding: 1.5rem;
+    padding-left: 0.8rem;
+
+    background-color: var(--White);
+    border: 1px solid rgba(0, 0, 0, 0.100);
+}
+
+#login-others
+#login-facebook,
+#login-twitter,
+#login-google {
+    width: 25rem;
+    margin: 0 auto;
+    padding: 1.0rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+
+    text-align: left;
+    font-size: 1.0rem;
+
+    cursor: pointer;
+
+    color: var(--White);
+    border: 1px solid transparent;
+}
+
+/* CONFIGURAÇÕES DO MAIN - LOGIN OTHERS | FACEBOOK */
+#login-others #login-facebook {
+    background-color: #3B5998;
+}
+
+#login-others #login-facebook:hover {
+    transition: .5s ease all;
+
+    background-color: #2F4677;
+}
+
+#login-others #login-facebook:not(:hover) {
+    transition: .5s ease all;
+
+    background-color: #3B5998;
+}
+
+/* CONFIGURAÇÕES DO MAIN - LOGIN OTHERS | TWITTER */
+#login-others #login-twitter {
+    background-color: #55ACEE;
+}
+
+#login-others #login-twitter:hover {
+    transition: .5s ease all;
+
+    background-color: #468EC5;
+}
+
+#login-others #login-twitter:not(:hover) {
+    transition: .5s ease all;
+
+    background-color: #55ACEE;
+}
+
+/* CONFIGURAÇÕES DO MAIN - LOGIN OTHERS | GOOGLE+ */
+#login-others #login-google {
+    background-color: #DD4B39;
+}
+
+#login-others #login-google:hover {
+    transition: .5s ease all;
+
+    background-color: #BB4131;
+}
+
+#login-others #login-google:not(:hover) {
+    transition: .5s ease all;
+    
+    background-color: #DD4B39;
+}
+
+/* CONFIGURAÇÕES DO MAIN - INFORMATION USER */
+#information-user {
+    position: relative;
+    display: inline-flex;
+
+    width: 30rem;
+    height: 20rem;
+
+    padding: 1.5rem;
+    padding-left: 0.8rem;
+
+    background-color: var(--White);
+    border: 1px solid rgba(0, 0, 0, 0.100);
+}
+
+#information-user #information-input {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+#information-input #main-title {
+    margin-bottom: 0.5rem;
+
+    color: var(--Fou);
+}
+
+/* CONFIGURAÇÕES DO MAIN - INFORMATION USER | INPUT */
+#information-input
+.mail-input,
+.pass-input {
+    width: 25rem;
+    margin: 0 auto;
+    padding: 0.80rem;
+    margin-top: 1.0rem;
+    padding-left: 0.80rem;
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+
+    font-size: 1.0rem;
+}
+
+
+#information-input
+.mail-input:focus,
+.pass-input:focus {
+    transition: .5s ease all;
+
+    outline: none;
+    border: 2px solid var(--Black);
+}
+
+#information-input
+.mail-input:focus::placeholder,
+.pass-input:focus::placeholder {
+    transition: .3s ease-in-out;
+
+    color: var(--White);
+}
+
+#information-input
+.mail-input:not(:focus)::placeholder,
+.pass-input:not(:focus)::placeholder {
+    transition: .3s ease-in-out;
+}
+
+#information-input #login-button {
+    width: 10rem;
+    padding: 0.50rem;
+    margin-top: 0.5rem;
+
+    cursor: pointer;
+    color: var(--White);
+    border-radius: 0.5rem;
+    background-color: var(--Fou);
+    border: 1px solid transparent;
+}
+
+#information-input #login-button:hover {
+    transition: .9s ease all;
+
+    color: var(--Fou);
+    background-color: var(--White);
+}
+
+#information-input #login-button:not(:hover) {
+    transition: .9s ease all;
+
+    color: var(--White);
+    background-color: var(--Fou);
+}
+
+/* CONFIGURAÇÕES DO MAIN - INFORMATION USER | INFORMATION-TEXT */
+#information-input #information-text {
+    display: flex;
+    margin-top: 1.3rem;
+}
+
+#information-text .link-information {
+    text-decoration: none;
+
+    color: var(--Thr);
+}
+
+#information-text .link-information:hover {
+    text-decoration: underline;
+}
+
+#information-text #link-information {
+    margin-left: 6.0rem;
+
+    color: var(--Black);
+}
+
+
+/* CONFIGURAÇÕES DO PLACEHOLDER | INPUT */
+input[type=text] {
+    font-family: Arial, Helvetica, sans-serif;
+}
+::-webkit-input-placeholder { 
+    font-family: FontAwesome;
+}
+
+input:-moz-placeholder { 
+    font-family: FontAwesome;
+}
+
+/* CONFIGURAÇÕES DE ERRO | INPUT */
+.mail-input-erro, .pass-input-erro {
+    width: 25rem;
+    margin: 0 auto;
+    padding: 0.80rem;
+    margin-top: 1.0rem;
+    padding-left: 0.80rem;
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+
+    font-size: 1.0rem;
+
+    border: 0.1rem solid var(--Fiv);
+} 

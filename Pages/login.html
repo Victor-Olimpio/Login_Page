@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ARQUIVO FAVICON -->
+        <link rel="shortcut icon" href="../Image/favicon_ball.ico" type="image/x-icon">
+        <!--  ARQUIVO CSS -->
+        <link rel="stylesheet" href="../Styles/login.css">
+        <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css' type='text/css'>
+        <title>Projeto - Login</title>
+    </head>
+    <body>
+        <!-- COMEÇO - HEADER -->
+        <header id="header-page">
+            <h1 id="header-title"></h1>
+        </header>
+        <!-- FIM - HEADER-->
+        <!-- COMEÇO - MAIN-->
+        <main id="main-page">
+            <div id="container-main">
+                <div id="login-others">
+                    <button id="login-facebook"><i class="fab fa-facebook-f"></i> | Login com Facebook</button>
+                    <button id="login-twitter"><i class="fab fa-twitter"></i> | Login com Twitter</button>
+                    <button id="login-google"><i class="fab fa-google-plus-g"></i> | Login com Google+</button>
+                </div>
+                <div id="information-user">
+                    <div id="information-input">
+                        <h1 id="main-title">Login</h1>
+
+                        <input type="email" class="mail-input" placeholder="&#xf0e0; | Endereço de Email">
+
+                        <input type="password" class="pass-input" placeholder="&#xf13e; | Senha do Usuário">
+
+                        <button id="login-button" onclick="validationButton()">Entrar</button>
+                        <div id="information-text">
+                            <a href="#" class="link-information">Esqueceu-se da Senha?</a>
+                            <a href="#" class="link-information" id="link-information">Cadastre-se Agora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- FIM - MAIN-->
+    </body>
+    <!-- ARQUIVO JAVASCRIPT-->
+    <script src="../Script/login.js"></script>
+    <script src="https://kit.fontawesome.com/6797397c81.js" crossorigin="anonymous"></script>
+</html>
